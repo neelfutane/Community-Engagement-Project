@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate="page-title">Waste Management Techniques</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    .topic-content {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+    
+    .topic-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .topic-icon {
+      font-size: 2rem;
+      color: #0ea5e9;
+      margin-right: 1rem;
+      background-color: #e0f2fe;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+    
+    .media-container {
+      margin: 2rem 0;
+    }
+    
+    .topic-image {
+      width: 100%;
+      height: 700%;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      margin-bottom: 1.5rem;
+    }
+    
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    h2 {
+      color: #0ea5e9;
+      margin-top: 2rem;
+    }
+    
+    h3 {
+      color: #0ea5e9;
+      margin-top: 1.5rem;
+    }
+    
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .back-button:hover {
+      background-color: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Agrio Logo" />
+        <span>Ecosphere</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" data-translate="nav-home">Home</a>
+        <a href="about.html" data-translate="nav-about">About</a>
+        <a href="services.html" data-translate="nav-services">Services</a>
+        <a href="contact.html" data-translate="nav-contact">Contact</a>
+        <div class="language-wrapper">
+          <i class="fas fa-globe"></i>
+          <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="mr">मराठी</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> <span data-translate="back-button">Back to Topics</span></a>
+
+    <div class="topic-header">
+      <div class="topic-icon">
+        <i class="fas fa-recycle"></i>
+      </div>
+      <div>
+        <h1 data-translate="main-title">Waste Management Techniques</h1>
+        <p class="subtitle" data-translate="main-subtitle">Learn effective methods to manage agricultural waste and convert it into valuable resources.</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/GjKXTjLs020?si=dEGsdljSR9KNjFnf" title="Waste Management Techniques" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="topic-content">
+      <h2 data-translate="intro-title">Introduction to Agricultural Waste Management</h2>
+      <p data-translate="intro-text">Agricultural waste management involves the proper handling, treatment, and disposal of waste generated from farming activities. Effective waste management is crucial for environmental protection, resource conservation, and sustainable agriculture.</p>
+
+      <h3 data-translate="composting-title">Composting</h3>
+      <p data-translate="composting-text">Composting is a biological process that converts organic waste into a valuable soil amendment. It's one of the most effective ways to recycle nutrients and reduce waste on farms.</p>
+      <ul>
+        <li data-translate="compost-1">Collect organic waste like crop residues, kitchen scraps, and manure</li>
+        <li data-translate="compost-2">Create alternating layers of green (nitrogen-rich) and brown (carbon-rich) materials</li>
+        <li data-translate="compost-3">Maintain proper moisture and aeration</li>
+        <li data-translate="compost-4">Turn the pile regularly to speed up decomposition</li>
+        <li data-translate="compost-5">Use finished compost to improve soil structure and fertility</li>
+      </ul>
+
+      <h3 data-translate="anaerobic-title">Anaerobic Digestion</h3>
+      <p data-translate="anaerobic-text">Anaerobic digestion is a process that breaks down organic matter in the absence of oxygen, producing biogas and nutrient-rich digestate.</p>
+      <ul>
+        <li data-translate="anaerobic-1">Collect manure and other organic waste</li>
+        <li data-translate="anaerobic-2">Feed into a biodigester system</li>
+        <li data-translate="anaerobic-3">Capture methane gas for energy production</li>
+        <li data-translate="anaerobic-4">Use digestate as a fertilizer</li>
+      </ul>
+
+      <h3 data-translate="residue-title">Crop Residue Management</h3>
+      <p data-translate="residue-text">Instead of burning crop residues, which contributes to air pollution, consider these alternatives:</p>
+      <ul>
+        <li data-translate="residue-1">Incorporate residues into the soil to increase organic matter</li>
+        <li data-translate="residue-2">Use as mulch to control weeds and conserve moisture</li>
+        <li data-translate="residue-3">Convert to animal feed or bedding</li>
+        <li data-translate="residue-4">Use for mushroom cultivation</li>
+      </ul>
+
+      <h3 data-translate="livestock-title">Livestock Waste Management</h3>
+      <p data-translate="livestock-text">Proper management of manure and other livestock waste is essential for environmental protection and farm profitability.</p>
+      <ul>
+        <li data-translate="livestock-1">Store manure properly to prevent runoff</li>
+        <li data-translate="livestock-2">Compost or digest manure before application</li>
+        <li data-translate="livestock-3">Apply manure at appropriate rates and times</li>
+        <li data-translate="livestock-4">Consider separating solids for easier handling</li>
+      </ul>
+
+      <h3 data-translate="recycling-title">Recycling and Repurposing</h3>
+      <p data-translate="recycling-text">Many agricultural wastes can be recycled or repurposed:</p>
+      <ul>
+        <li data-translate="recycle-1">Plastic containers and films can be recycled</li>
+        <li data-translate="recycle-2">Old equipment can be repaired or salvaged for parts</li>
+        <li data-translate="recycle-3">Used oil can be refined and reused</li>
+        <li data-translate="recycle-4">Packaging materials can be returned to suppliers</li>
+      </ul>
+
+      <h2 data-translate="benefits-title">Benefits of Proper Waste Management</h2>
+      <ul>
+        <li data-translate="benefit-1">Reduces environmental pollution</li>
+        <li data-translate="benefit-2">Converts waste into valuable resources</li>
+        <li data-translate="benefit-3">Saves money on fertilizers and energy</li>
+        <li data-translate="benefit-4">Improves soil health and crop productivity</li>
+        <li data-translate="benefit-5">Can provide additional income streams</li>
+        <li data-translate="benefit-6">Reduces greenhouse gas emissions</li>
+      </ul>
+    </div>
+
+    <div class="media-container">
+      <img src="wmt.png" alt="Composting" class="topic-image"/>
+    </div>
+  </div>
+
+  <script>
+    const translations = {
+      en: {
+        "page-title": "Waste Management Techniques",
+        "nav-home": "Home",
+        "nav-about": "About",
+        "nav-services": "Services",
+        "nav-contact": "Contact",
+        "back-button": "Back to Topics",
+        "main-title": "Waste Management Techniques",
+        "main-subtitle": "Learn effective methods to manage agricultural waste and convert it into valuable resources.",
+        "intro-title": "Introduction to Agricultural Waste Management",
+        "intro-text": "Agricultural waste management involves the proper handling, treatment, and disposal of waste generated from farming activities. Effective waste management is crucial for environmental protection, resource conservation, and sustainable agriculture.",
+        "composting-title": "Composting",
+        "composting-text": "Composting is a biological process that converts organic waste into a valuable soil amendment...",
+        "compost-1": "Collect organic waste like crop residues, kitchen scraps, and manure",
+        "compost-2": "Create alternating layers of green (nitrogen-rich) and brown (carbon-rich) materials",
+        "compost-3": "Maintain proper moisture and aeration",
+        "compost-4": "Turn the pile regularly to speed up decomposition",
+        "compost-5": "Use finished compost to improve soil structure and fertility",
+        "anaerobic-title": "Anaerobic Digestion",
+        "anaerobic-text": "Anaerobic digestion is a process that breaks down organic matter in the absence of oxygen...",
+        "anaerobic-1": "Collect manure and other organic waste",
+        "anaerobic-2": "Feed into a biodigester system",
+        "anaerobic-3": "Capture methane gas for energy production",
+        "anaerobic-4": "Use digestate as a fertilizer",
+        "residue-title": "Crop Residue Management",
+        "residue-text": "Instead of burning crop residues, which contributes to air pollution...",
+        "residue-1": "Incorporate residues into the soil to increase organic matter",
+        "residue-2": "Use as mulch to control weeds and conserve moisture",
+        "residue-3": "Convert to animal feed or bedding",
+        "residue-4": "Use for mushroom cultivation",
+        "livestock-title": "Livestock Waste Management",
+        "livestock-text": "Proper management of manure and other livestock waste is essential...",
+        "livestock-1": "Store manure properly to prevent runoff",
+        "livestock-2": "Compost or digest manure before application",
+        "livestock-3": "Apply manure at appropriate rates and times",
+        "livestock-4": "Consider separating solids for easier handling",
+        "recycling-title": "Recycling and Repurposing",
+        "recycling-text": "Many agricultural wastes can be recycled or repurposed...",
+        "recycle-1": "Plastic containers and films can be recycled",
+        "recycle-2": "Old equipment can be repaired or salvaged for parts",
+        "recycle-3": "Used oil can be refined and reused",
+        "recycle-4": "Packaging materials can be returned to suppliers",
+        "benefits-title": "Benefits of Proper Waste Management",
+        "benefit-1": "Reduces environmental pollution",
+        "benefit-2": "Converts waste into valuable resources",
+        "benefit-3": "Saves money on fertilizers and energy",
+        "benefit-4": "Improves soil health and crop productivity",
+        "benefit-5": "Can provide additional income streams",
+        "benefit-6": "Reduces greenhouse gas emissions"
+      },
+      hi: {
+        "title": "कृषि कचरा प्रबंधन तकनीकें",
+        "nav-home": "होम",
+        "nav-about": "हमारे बारे में",
+        "nav-services": "सेवाएं",
+        "nav-contact": "संपर्क करें",
+        "back-button": "विषयों पर लौटें",
+        "main-title": "कृषि कचरा प्रबंधन तकनीकें",
+        "main-subtitle": "कृषि कचरे को प्रबंधित करने और उसे मूल्यवान संसाधनों में बदलने के प्रभावी तरीके सीखें।",
+        "intro-title": "कृषि कचरा प्रबंधन का परिचय",
+        "intro-text": "कृषि कचरा प्रबंधन में कृषि गतिविधियों से उत्पन्न कचरे का उचित निपटान, उपचार और प्रबंधन शामिल है। यह पर्यावरण संरक्षण और संसाधनों के सतत उपयोग के लिए आवश्यक है।",
+        "composting-title": "कम्पोस्टिंग",
+        "composting-text": "कम्पोस्टिंग एक जैविक प्रक्रिया है जो जैविक कचरे को मूल्यवान खाद में बदल देती है...",
+        "compost-1": "फसल अवशेष, रसोई का कचरा और गोबर एकत्र करें",
+        "compost-2": "हरे और भूरे सामग्री की परतें बनाएं",
+        "compost-3": "नमी और हवा का ध्यान रखें",
+        "compost-5": "तैयार कम्पोस्ट को मिट्टी की उर्वरता बढ़ाने के लिए प्रयोग करें",
+        "compost-4": "डिकम्पोज़ को तेज करने के लिए ढेर को नियमित रूप से पलटें",
+        "anaerobic-title": "अनएरोबिक डाइजेशन",
+  "anaerobic-text": "अनएरोबिक डाइजेशन एक ऐसी प्रक्रिया है जिसमें ऑक्सीजन की अनुपस्थिति में जैविक पदार्थों को तोड़ा जाता है, जिससे बायोगैस और पोषक तत्वों से भरपूर अपशिष्ट प्राप्त होता है।",
+  "anaerobic-1": "गोबर और अन्य जैविक अपशिष्ट एकत्र करें",
+  "anaerobic-2": "इन्हें बायोडाइजेस्टर प्रणाली में डालें",
+  "anaerobic-3": "ऊर्जा उत्पादन के लिए मीथेन गैस को संग्रहित करें",
+  "anaerobic-4": "उपज के लिए डाइजेस्टेट का उपयोग करें",
+
+  "residue-title": "फसल अवशेष प्रबंधन",
+  "residue-text": "फसल अवशेषों को जलाने के बजाय, जो वायु प्रदूषण में योगदान देता है, इन विकल्पों पर विचार करें:",
+  "residue-1": "अवशेषों को मिट्टी में मिलाकर कार्बनिक पदार्थ बढ़ाएं",
+  "residue-2": "नमी को बनाए रखने और खरपतवार नियंत्रण के लिए मल्च के रूप में उपयोग करें",
+  "residue-3": "जानवरों के चारे या बिछावन में परिवर्तित करें",
+  "residue-4": "मशरूम की खेती के लिए उपयोग करें",
+
+  "livestock-title": "पशु अपशिष्ट प्रबंधन",
+  "livestock-text": "गोबर और अन्य पशु अपशिष्टों का उचित प्रबंधन पर्यावरण संरक्षण और कृषि लाभ के लिए आवश्यक है।",
+  "livestock-1": "गोबर को बहाव से रोकने के लिए सही ढंग से संग्रहित करें",
+  "livestock-2": "गोबर को खाद बनाकर या डाइजेस्ट कर उपयोग करें",
+  "livestock-3": "उचित समय और मात्रा में गोबर का उपयोग करें",
+  "livestock-4": "आसान प्रबंधन के लिए ठोस और तरल भागों को अलग करने पर विचार करें",
+
+  "recycling-title": "पुनर्चक्रण और पुन: उपयोग",
+  "recycling-text": "कई कृषि अपशिष्टों को पुनर्चक्रित या पुनः उपयोग किया जा सकता है:",
+  "recycle-1": "प्लास्टिक के कंटेनर और फिल्म्स को पुनर्चक्रित किया जा सकता है",
+  "recycle-2": "पुराने उपकरणों की मरम्मत की जा सकती है या उनके हिस्से निकाले जा सकते हैं",
+  "recycle-3": "प्रयुक्त तेल को परिष्कृत कर दोबारा उपयोग किया जा सकता है",
+  "recycle-4": "पैकेजिंग सामग्री को आपूर्तिकर्ताओं को वापस किया जा सकता है",
+
+  "benefits-title": "उचित अपशिष्ट प्रबंधन के लाभ",
+  "benefit-1": "पर्यावरण प्रदूषण को कम करता है",
+  "benefit-2": "अपशिष्ट को मूल्यवान संसाधनों में परिवर्तित करता है",
+  "benefit-3": "उर्वरकों और ऊर्जा पर खर्च कम करता है",
+  "benefit-4": "मिट्टी की गुणवत्ता और फसल उत्पादन में सुधार करता है",
+  "benefit-5": "अतिरिक्त आय के स्रोत प्रदान कर सकता है",
+  "benefit-6": "ग्रीनहाउस गैसों के उत्सर्जन को कम करता है"
+      },
+      mr: {
+        "title": "कृषी कचरा व्यवस्थापन तंत्र",
+        "nav-home": "मुख्यपृष्ठ",
+        "nav-about": "आमच्याबद्दल",
+        "nav-services": "सेवा",
+        "nav-contact": "संपर्क",
+        "back-button": "विषयांकडे परत जा",
+        "main-title": "कृषी कचरा व्यवस्थापन तंत्र",
+        "main-subtitle": "कृषी कचऱ्याचे प्रभावी व्यवस्थापन करून ते उपयुक्त संसाधनात कसे रूपांतरित करायचे ते शिका.",
+        "intro-title": "कृषी कचरा व्यवस्थापनाचा परिचय",
+        "intro-text": "कृषी कचरा व्यवस्थापन म्हणजे शेतीतील कचऱ्याचा योग्य प्रकारे निपटारा, प्रक्रिया व वापर होय. हे पर्यावरण संरक्षण व शाश्वत शेतीसाठी आवश्यक आहे.",
+        "composting-title": "सेंद्रिय खत बनवणे",
+        "composting-text": "सेंद्रिय खत बनवणे ही एक जैविक प्रक्रिया आहे ज्याद्वारे कचरा सुपीक मातीमध्ये रूपांतरित होतो...",
+        "compost-1": "फसलांचे अवशेष, स्वयंपाकघरातील कचरा आणि शेण गोळा करा",
+        "compost-2": "हिरव्या आणि तपकिरी घटकांच्या परतांचे थर तयार करा",
+        "compost-3": "योग्य आर्द्रता आणि वायुवीजन ठेवा",
+        "compost-4": "जलद विघटनासाठी ढीग हलवा",
+        "compost-5": "तयार खत माती सुधारण्यासाठी वापरा",
+        "anaerobic-title": "अन्‍अॅरोबिक विघटन",
+  "anaerobic-text": "अन्‍अॅरोबिक विघटन ही एक प्रक्रिया आहे ज्यामध्ये ऑक्सिजनच्या अनुपस्थितीत सेंद्रिय पदार्थांचे विघटन होते, ज्यामुळे बायोगॅस आणि पोषक घटकांनी समृद्ध असे अवशेष मिळतात.",
+  "anaerobic-1": "गोठयातील शेण आणि इतर सेंद्रिय कचरा गोळा करा",
+  "anaerobic-2": "तो बायोडायजेस्टर प्रणालीमध्ये टाका",
+  "anaerobic-3": "ऊर्जेच्या निर्मितीसाठी मिथेन गॅस जमा करा",
+  "anaerobic-4": "उत्पन्नासाठी डाइजेस्टेटचा खत म्हणून वापर करा",
+
+  "residue-title": "पिकांचे अवशेष व्यवस्थापन",
+  "residue-text": "पिकांचे अवशेष जाळण्याऐवजी, जे वायू प्रदूषणास कारणीभूत ठरतात, या पर्यायांचा विचार करा:",
+  "residue-1": "जमिनीत अवशेष मिसळून सेंद्रिय घटक वाढवा",
+  "residue-2": "तण नियंत्रण व आर्द्रता राखण्यासाठी मल्च म्हणून वापर करा",
+  "residue-3": "जनावरांच्या चाऱ्यासाठी किंवा बिछानासाठी वापर करा",
+  "residue-4": "मशरूम शेतीसाठी वापर करा",
+
+  "livestock-title": "पशू कचरा व्यवस्थापन",
+  "livestock-text": "शेण व इतर पशू कचऱ्याचे योग्य व्यवस्थापन पर्यावरण रक्षण व शाश्वत शेतीसाठी अत्यावश्यक आहे.",
+  "livestock-1": "शेण योग्यरित्या साठवून वाहून जाण्यापासून रोखा",
+  "livestock-2": "खते बनवण्यासाठी किंवा डाइजेस्ट करून शेण वापरा",
+  "livestock-3": "योग्य वेळ व प्रमाणात शेणाचा वापर करा",
+  "livestock-4": "सुलभ हाताळणीसाठी घन व द्रव घटक वेगळे करा",
+
+  "recycling-title": "पुनर्वापर आणि पुनर्निर्मिती",
+  "recycling-text": "काही शेतीतील कचरा पुन्हा वापरता किंवा पुनर्निर्मिती करता येतो:",
+  "recycle-1": "प्लास्टिकच्या बाटल्या व फिल्म्सचे पुनर्वापर करता येते",
+  "recycle-2": "जुने उपकरण दुरुस्त करून किंवा त्याचे भाग काढून पुन्हा वापरता येतात",
+  "recycle-3": "वापरलेले तेल शुद्ध करून पुन्हा वापरता येते",
+  "recycle-4": "पॅकेजिंग साहित्य पुरवठादाराकडे परत दिले जाऊ शकते",
+
+  "benefits-title": "योग्य कचरा व्यवस्थापनाचे फायदे",
+  "benefit-1": "पर्यावरण प्रदूषणात घट होते",
+  "benefit-2": "कचऱ्याचे मूल्यवान साधनांमध्ये रूपांतर होते",
+  "benefit-3": "खते आणि ऊर्जा यावरचा खर्च कमी होतो",
+  "benefit-4": "मातीची सुपीकता आणि उत्पादनक्षमता वाढते",
+  "benefit-5": "अतिरिक्त उत्पन्नाचे स्रोत निर्माण होतात",
+  "benefit-6": "हरितगृह वायूंचे उत्सर्जन कमी होते"
+      }
+    };
+
+    function changeLanguage() {
+      const lang = document.getElementById("languageSelector").value;
+      const elements = document.querySelectorAll("[data-translate]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.innerText = translations[lang][key] || translations["en"][key];
+      });
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

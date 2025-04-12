@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecosphere - Sustainable Agriculture</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Agrio Logo" />
+        <span>Ecosphere</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active" data-translate="nav-home">Home</a>
+        <a href="about.html" data-translate="nav-about">About</a>
+        <a href="services.html" data-translate="nav-services">Services</a>
+        <a href="contact.html" data-translate="nav-contact">Contact</a>
+        <div class="language-wrapper">
+          <i class="fas fa-globe"></i>
+          <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="mr">मराठी</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <h1 data-translate="main-title">Sustainable Agriculture Information Hub</h1>
+      <p data-translate="main-subtitle">
+        Discover practical techniques and resources for sustainable farming and agricultural practices
+      </p>
+    </div>
+    
+    <div class="topics-grid">
+      <a href="waste-management.html" class="topic-card">
+        <div class="icon"><i class="fas fa-recycle"></i></div>
+        <h3 data-translate="topic1">Waste Management Techniques</h3>
+      </a>
+      
+      <a href="energy-conservation.html" class="topic-card">
+        <div class="icon"><i class="fas fa-bolt"></i></div>
+        <h3 data-translate="topic2">Energy Conservation using easy tips</h3>
+      </a>
+      
+      <a href="animal-husbandry.html" class="topic-card">
+        <div class="icon"><i class="fas fa-tractor"></i></div>
+        <h3 data-translate="topic3">Animal husbandry and poultry farming</h3>
+      </a>
+      
+      <a href="rain-water-harvesting.html" class="topic-card">
+        <div class="icon"><i class="fas fa-cloud-rain"></i></div>
+        <h3 data-translate="topic4">Rain Water Harvesting Techniques</h3>
+      </a>
+    </div>
+    
+    <div class="info-section">
+      <h2 data-translate="section-title">Why Sustainable Agriculture Matters</h2>
+      <p data-translate="section-text">
+        Sustainable agricultural practices help farmers produce food in a way that preserves the environment, 
+        supports local communities, and ensures economic viability for future generations.
+      </p>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+          alt="Sustainable Farming"
+        />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2023 Agrio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Language Script -->
+  <script>
+    const translations = {
+      en: {
+        "main-title": "Sustainable Agriculture Information Hub",
+        "main-subtitle": "Discover practical techniques and resources for sustainable farming and agricultural practices",
+        "topic1": "Waste Management Techniques",
+        "topic2": "Energy Conservation using easy tips",
+        "topic3": "Animal husbandry and poultry farming",
+        "topic4": "Rain Water Harvesting Techniques",
+        "section-title": "Why Sustainable Agriculture Matters",
+        "section-text": "Sustainable agricultural practices help farmers produce food in a way that preserves the environment, supports local communities, and ensures economic viability for future generations.",
+        "nav-home": "Home",
+        "nav-about": "About",
+        "nav-services": "Services",
+        "nav-contact": "Contact"
+      },
+      hi: {
+        "main-title": "सतत कृषि सूचना केंद्र",
+        "main-subtitle": "टिकाऊ कृषि और खेती के लिए व्यावहारिक तकनीकों और संसाधनों की खोज करें",
+        "topic1": "कचरा प्रबंधन तकनीकें",
+        "topic2": "आसान युक्तियों से ऊर्जा संरक्षण",
+        "topic3": "पशुपालन और पोल्ट्री फार्मिंग",
+        "topic4": "वर्षा जल संचयन तकनीकें",
+        "section-title": "सतत कृषि क्यों महत्वपूर्ण है",
+        "section-text": "सतत कृषि पद्धतियाँ किसानों को इस तरह से भोजन पैदा करने में मदद करती हैं जो पर्यावरण को संरक्षित करती हैं, स्थानीय समुदायों का समर्थन करती हैं और भविष्य की पीढ़ियों के लिए आर्थिक स्थिरता सुनिश्चित करती हैं।",
+        "nav-home": "होम",
+    "nav-about": "हमारे बारे में",
+    "nav-services": "सेवाएं",
+    "nav-contact": "संपर्क करें"
+      },
+      mr: {
+        "main-title": "शाश्वत शेती माहिती केंद्र",
+        "main-subtitle": "शाश्वत शेतीसाठी तंत्रे आणि साधने शोधा",
+        "topic1": "कचरा व्यवस्थापन तंत्र",
+        "topic2": "सोप्या टिप्ससह ऊर्जा बचत",
+        "topic3": "पशुपालन आणि कुक्कुटपालन",
+        "topic4": "पावसाचे पाणी साठवण्याच्या पद्धती",
+        "section-title": "शाश्वत शेती का महत्त्वाची आहे",
+        "section-text": "शाश्वत शेती शेतकऱ्यांना पर्यावरणाचा विचार करून अन्न तयार करण्यात मदत करते, स्थानिक समुदायांना समर्थन देते आणि भविष्यातील पिढ्यांसाठी आर्थिक शाश्वतता सुनिश्चित करते.",
+        "nav-home": "मुख्यपृष्ठ",
+    "nav-about": "आमच्याबद्दल",
+    "nav-services": "सेवा",
+    "nav-contact": "संपर्क"
+        
+      }
+    };
+
+    function changeLanguage() {
+      const lang = document.getElementById("languageSelector").value;
+      const elements = document.querySelectorAll("[data-translate]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.innerText = translations[lang][key] || el.innerText;
+      });
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

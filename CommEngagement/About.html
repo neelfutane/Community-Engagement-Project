@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Ecosphere</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Agrio Logo" />
+          <span>Ecosphere</span>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" data-translate="nav-home">Home</a>
+          <a href="about.html" class="active" data-translate="nav-about">About</a>
+          <a href="services.html" data-translate="nav-services">Services</a>
+          <a href="contact.html" data-translate="nav-contact">Contact</a>
+          <div class="language-wrapper">
+            <i class="fas fa-globe"></i>
+            <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी</option>
+              <option value="mr">मराठी</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="page-header">
+        <h1 data-translate="about-title">About Agrio</h1>
+      </div>
+
+      <div class="content-box">
+        <h2 data-translate="mission-title">Our Mission</h2>
+        <p data-translate="mission-text">
+          At Agrio, our mission is to empower farmers and agricultural professionals with the knowledge and resources 
+          they need to implement sustainable farming practices. We believe that sustainable agriculture is essential 
+          for feeding the world while preserving our natural resources for future generations.
+        </p>
+
+        <h2 data-translate="offer-title">What We Offer</h2>
+        <p data-translate="offer-text">
+          We provide comprehensive, practical information on a wide range of sustainable agricultural practices, 
+          from waste management and energy conservation to animal husbandry and water harvesting. Our content is 
+          developed by experts in the field and is designed to be accessible and applicable for farmers of all scales.
+        </p>
+
+        <div class="image-container">
+          <img src="farmers in field.jpg" alt="Farmers in field" />
+        </div>
+
+        <h2 data-translate="team-title">Our Team</h2>
+        <p data-translate="team-text">
+          Our team consists of agricultural experts, environmental scientists, and technology specialists who are 
+          passionate about promoting sustainable agriculture. We collaborate with research institutions, extension 
+          services, and innovative farmers to bring you the most current and effective practices.
+        </p>
+      </div>
+
+      <div class="content-box">
+        <h2 data-translate="contact-title">Get In Touch</h2>
+        <p data-translate="contact-text">
+          We value your feedback and questions. Feel free to reach out to us through our contact page or follow us 
+          on social media for regular updates on sustainable agriculture practices and news.
+        </p>
+        <div class="button-container">
+          <a href="contact.html" class="btn" data-translate="contact-button">Contact Us</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2023 Agrio. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="contact.html" data-translate="nav-contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Language Script -->
+    <script>
+      const translations = {
+        en: {
+          "nav-home": "Home",
+          "nav-about": "About",
+          "nav-services": "Services",
+          "nav-contact": "Contact",
+          "about-title": "About Agrio",
+          "mission-title": "Our Mission",
+          "mission-text": "At Agrio, our mission is to empower farmers and agricultural professionals with the knowledge and resources they need to implement sustainable farming practices. We believe that sustainable agriculture is essential for feeding the world while preserving our natural resources for future generations.",
+          "offer-title": "What We Offer",
+          "offer-text": "We provide comprehensive, practical information on a wide range of sustainable agricultural practices, from waste management and energy conservation to animal husbandry and water harvesting. Our content is developed by experts in the field and is designed to be accessible and applicable for farmers of all scales.",
+          "team-title": "Our Team",
+          "team-text": "Our team consists of agricultural experts, environmental scientists, and technology specialists who are passionate about promoting sustainable agriculture. We collaborate with research institutions, extension services, and innovative farmers to bring you the most current and effective practices.",
+          "contact-title": "Get In Touch",
+          "contact-text": "We value your feedback and questions. Feel free to reach out to us through our contact page or follow us on social media for regular updates on sustainable agriculture practices and news.",
+          "contact-button": "Contact Us"
+        },
+        hi: {
+          "nav-home": "होम",
+          "nav-about": "हमारे बारे में",
+          "nav-services": "सेवाएं",
+          "nav-contact": "संपर्क करें",
+          "about-title": "एग्रीओ के बारे में",
+          "mission-title": "हमारा मिशन",
+          "mission-text": "एग्रीओ में, हमारा मिशन किसानों और कृषि पेशेवरों को टिकाऊ खेती की प्रथाओं को अपनाने के लिए आवश्यक ज्ञान और संसाधनों से सशक्त बनाना है। हम मानते हैं कि टिकाऊ कृषि भविष्य की पीढ़ियों के लिए प्राकृतिक संसाधनों को संरक्षित रखते हुए दुनिया को खिलाने के लिए आवश्यक है।",
+          "offer-title": "हम क्या पेश करते हैं",
+          "offer-text": "हम टिकाऊ कृषि प्रथाओं पर व्यापक और व्यावहारिक जानकारी प्रदान करते हैं, जिसमें कचरा प्रबंधन, ऊर्जा संरक्षण, पशुपालन और जल संचयन शामिल हैं। हमारी सामग्री क्षेत्र के विशेषज्ञों द्वारा विकसित की गई है और सभी स्तरों के किसानों के लिए सुलभ और उपयोगी बनाई गई है।",
+          "team-title": "हमारी टीम",
+          "team-text": "हमारी टीम में कृषि विशेषज्ञ, पर्यावरण वैज्ञानिक और प्रौद्योगिकी विशेषज्ञ शामिल हैं जो टिकाऊ कृषि को बढ़ावा देने के लिए प्रतिबद्ध हैं। हम अनुसंधान संस्थानों, विस्तार सेवाओं और नवाचारशील किसानों के साथ मिलकर काम करते हैं।",
+          "contact-title": "संपर्क करें",
+          "contact-text": "हम आपकी प्रतिक्रिया और प्रश्नों को महत्व देते हैं। हमारी संपर्क पृष्ठ से हमें संपर्क करें या सोशल मीडिया पर फॉलो करें।",
+          "contact-button": "संपर्क करें"
+        },
+        mr: {
+          "nav-home": "मुख्यपृष्ठ",
+          "nav-about": "आमच्याबद्दल",
+          "nav-services": "सेवा",
+          "nav-contact": "संपर्क",
+          "about-title": "ऍग्रीओ बद्दल",
+          "mission-title": "आमचे ध्येय",
+          "mission-text": "ऍग्रीओमध्ये, आमचे ध्येय शाश्वत शेतीच्या पद्धती राबवण्यासाठी शेतकऱ्यांना आणि कृषी व्यावसायिकांना आवश्यक ज्ञान आणि संसाधने देणे आहे. आम्ही मानतो की शाश्वत शेती भविष्यासाठी निसर्गसंपत्ती जपून जगाला अन्न पुरवण्यासाठी अत्यंत आवश्यक आहे.",
+          "offer-title": "आम्ही काय ऑफर करतो",
+          "offer-text": "आम्ही कचरा व्यवस्थापन, ऊर्जा बचत, पशुपालन आणि पाणी साठवण यासारख्या शाश्वत शेतीच्या विविध पद्धतींबद्दल व्यावहारिक आणि सुलभ माहिती देतो. आमची सामग्री क्षेत्रातील तज्ज्ञांनी तयार केलेली आहे आणि ती सर्व स्तरांवरील शेतकऱ्यांसाठी उपयुक्त आहे.",
+          "team-title": "आमची टीम",
+          "team-text": "आमच्यात कृषी तज्ज्ञ, पर्यावरणशास्त्रज्ञ आणि तंत्रज्ञान तज्ज्ञांचा समावेश आहे जे शाश्वत शेतीसाठी कार्यरत आहेत. आम्ही संशोधन संस्था, विस्तार सेवा आणि नाविन्यपूर्ण शेतकऱ्यांसोबत काम करतो.",
+          "contact-title": "संपर्क साधा",
+          "contact-text": "आपली प्रतिक्रिया आणि प्रश्न आमच्यासाठी महत्त्वाचे आहेत. कृपया आमच्याशी संपर्क साधा किंवा सोशल मीडियावर आमचे अनुसरण करा.",
+          "contact-button": "संपर्क करा"
+        }
+      };
+
+      function changeLanguage() {
+        const lang = document.getElementById("languageSelector").value;
+        const elements = document.querySelectorAll("[data-translate]");
+        elements.forEach(el => {
+          const key = el.getAttribute("data-translate");
+          el.innerText = translations[lang][key] || el.innerText;
+        });
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

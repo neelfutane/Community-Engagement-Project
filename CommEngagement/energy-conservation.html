@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="page-title">Energy Conservation using easy tips</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .topic-content {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+    
+    .topic-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .topic-icon {
+      font-size: 2rem;
+      color: #0ea5e9;
+      margin-right: 1rem;
+      background-color: #e0f2fe;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+    
+    .media-container {
+      margin: 2rem 0;
+    }
+    
+    .topic-image {
+      width: 100%;
+      height: 700%;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      margin-bottom: 1.5rem;
+    }
+    
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+    }
+    
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    h2 {
+      color: #0ea5e9;
+      margin-top: 2rem;
+    }
+    
+    h3 {
+      color: #0ea5e9;
+      margin-top: 1.5rem;
+    }
+    
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    
+    .back-button:hover {
+      background-color: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Agrio Logo" />
+        <span>Ecosphere</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="active" data-translate="nav-home">Home</a>
+        <a href="about.html" data-translate="nav-about">About</a>
+        <a href="services.html" data-translate="nav-services">Services</a>
+        <a href="contact.html" data-translate="nav-contact">Contact</a>
+        <div class="language-wrapper">
+          <i class="fas fa-globe"></i>
+          <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="mr">मराठी</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <a href="index.html" class="back-button">
+      <i class="fas fa-arrow-left"></i> <span data-translate="back-button">Back to Topics</span>
+    </a>
+    
+    <div class="topic-header">
+      <div class="topic-icon">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <div>
+        <h1 data-translate="main-title">Energy Conservation using easy tips</h1>
+        <p class="subtitle" data-translate="main-subtitle">Discover practical ways to reduce energy consumption and costs on your farm.</p>
+      </div>
+    </div>
+    
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/1BjazBSmwAM?si=MZLpMZD673remexL" title="Energy Conservation Tips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div class="topic-content">
+      <h2 data-translate="section-energy-use-title">Energy Use in Agriculture</h2>
+      <p data-translate="section-energy-use-desc">
+        Agriculture is an energy-intensive industry, using energy directly for field operations, irrigation, and livestock facilities,
+        and indirectly through fertilizers and pesticides. Implementing energy conservation measures can significantly reduce costs and environmental impact.
+      </p>
+      
+      <h3 data-translate="section-equip-title">Equipment Efficiency</h3>
+      <p data-translate="section-equip-desc">
+        Farm equipment accounts for a significant portion of energy use on farms. Here are tips to improve efficiency:
+      </p>
+      <ul>
+        <li data-translate="equip-tip-1">Regularly maintain engines and equipment</li>
+        <li data-translate="equip-tip-2">Use appropriate sized equipment for tasks</li>
+        <li data-translate="equip-tip-3">Consider fuel-efficient or electric alternatives when replacing equipment</li>
+        <li data-translate="equip-tip-4">Implement precision agriculture technologies to reduce overlapping passes</li>
+        <li data-translate="equip-tip-5">Use auto-guidance systems to minimize fuel usage</li>
+      </ul>
+      
+      <h3 data-translate="section-irrigation-title">Irrigation Efficiency</h3>
+      <p data-translate="section-irrigation-desc">
+        Irrigation can be one of the largest energy expenses on farms. Improve efficiency with these strategies:
+      </p>
+      <ul>
+        <li data-translate="irrigation-tip-1">Schedule irrigation based on crop needs and soil moisture levels</li>
+        <li data-translate="irrigation-tip-2">Maintain pumps and motors for optimal performance</li>
+        <li data-translate="irrigation-tip-3">Use low-pressure systems where possible</li>
+        <li data-translate="irrigation-tip-4">Consider drip irrigation for row crops</li>
+        <li data-translate="irrigation-tip-5">Install variable frequency drives on pumps</li>
+      </ul>
+      
+      <h3 data-translate="section-lighting-title">Lighting and Heating</h3>
+      <p data-translate="section-lighting-desc">
+        In livestock buildings and greenhouses, lighting and climate control systems consume significant energy:
+      </p>
+      <ul>
+        <li data-translate="lighting-tip-1">Switch to LED lighting</li>
+        <li data-translate="lighting-tip-2">Use lighting timers and sensors</li>
+        <li data-translate="lighting-tip-3">Improve insulation in buildings</li>
+        <li data-translate="lighting-tip-4">Install energy-efficient heating and cooling systems</li>
+        <li data-translate="lighting-tip-5">Consider passive solar design for new structures</li>
+      </ul>
+      
+      <h3 data-translate="section-renewable-title">Renewable Energy Options</h3>
+      <p data-translate="section-renewable-desc">
+        Farms have unique opportunities to generate renewable energy:
+      </p>
+      <ul>
+        <li data-translate="renewable-tip-1">Solar panels on buildings or unused land</li>
+        <li data-translate="renewable-tip-2">Wind turbines in suitable locations</li>
+        <li data-translate="renewable-tip-3">Biogas from anaerobic digesters</li>
+        <li data-translate="renewable-tip-4">Micro-hydro systems where water flow is available</li>
+      </ul>
+      
+      <h3 data-translate="section-audits-title">Energy Audits</h3>
+      <p data-translate="section-audits-desc">
+        Consider conducting an energy audit to identify specific opportunities for your farm:
+      </p>
+      <ul>
+        <li data-translate="audit-tip-1">Many utilities and extension services offer agricultural energy audits</li>
+        <li data-translate="audit-tip-2">Identify largest energy uses and prioritize improvements</li>
+        <li data-translate="audit-tip-3">Calculate return on investment for potential upgrades</li>
+        <li data-translate="audit-tip-4">Apply for funding or incentives to implement changes</li>
+      </ul>
+      
+      <h3 data-translate="section-tillage-title">Reduced Tillage Practices</h3>
+      <p data-translate="section-tillage-desc">
+        Adopting conservation tillage practices can significantly reduce fuel consumption:
+      </p>
+      <ul>
+        <li data-translate="tillage-tip-1">No-till or reduced-till systems require fewer tractor passes</li>
+        <li data-translate="tillage-tip-2">Less fuel used for field preparation and cultivation</li>
+        <li data-translate="tillage-tip-3">Additional benefits include improved soil health and carbon sequestration</li>
+      </ul>
+      
+      <h2 data-translate="section-benefits-title">Benefits of Energy Conservation</h2>
+      <ul>
+        <li data-translate="benefit-1">Lower operating costs</li>
+        <li data-translate="benefit-2">Reduced greenhouse gas emissions</li>
+        <li data-translate="benefit-3">Decreased dependence on fossil fuels</li>
+        <li data-translate="benefit-4">Potential new income streams from renewable energy</li>
+        <li data-translate="benefit-5">Improved resilience during power outages or fuel shortages</li>
+      </ul>
+    </div>
+    <div class="media-container">
+      <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBmYXJtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Solar Farm" class="topic-image">
+    </div>
+  </div>
+  
+  <script>
+    const translations = {
+      en: {
+        "page-title": "Energy Conservation using easy tips",
+        "nav-home": "Home",
+        "nav-about": "About",
+        "nav-services": "Services",
+        "nav-contact": "Contact",
+        "back-button": "Back to Topics",
+        "main-title": "Energy Conservation using easy tips",
+        "main-subtitle": "Discover practical ways to reduce energy consumption and costs on your farm.",
+        "section-energy-use-title": "Energy Use in Agriculture",
+        "section-energy-use-desc": "Agriculture is an energy-intensive industry, using energy directly for field operations, irrigation, and livestock facilities, and indirectly through fertilizers and pesticides. Implementing energy conservation measures can significantly reduce costs and environmental impact.",
+        "section-equip-title": "Equipment Efficiency",
+        "section-equip-desc": "Farm equipment accounts for a significant portion of energy use on farms. Here are tips to improve efficiency:",
+        "equip-tip-1": "Regularly maintain engines and equipment",
+        "equip-tip-2": "Use appropriate sized equipment for tasks",
+        "equip-tip-3": "Consider fuel-efficient or electric alternatives when replacing equipment",
+        "equip-tip-4": "Implement precision agriculture technologies to reduce overlapping passes",
+        "equip-tip-5": "Use auto-guidance systems to minimize fuel usage",
+        "section-irrigation-title": "Irrigation Efficiency",
+        "section-irrigation-desc": "Irrigation can be one of the largest energy expenses on farms. Improve efficiency with these strategies:",
+        "irrigation-tip-1": "Schedule irrigation based on crop needs and soil moisture levels",
+        "irrigation-tip-2": "Maintain pumps and motors for optimal performance",
+        "irrigation-tip-3": "Use low-pressure systems where possible",
+        "irrigation-tip-4": "Consider drip irrigation for row crops",
+        "irrigation-tip-5": "Install variable frequency drives on pumps",
+        "section-lighting-title": "Lighting and Heating",
+        "section-lighting-desc": "In livestock buildings and greenhouses, lighting and climate control systems consume significant energy:",
+        "lighting-tip-1": "Switch to LED lighting",
+        "lighting-tip-2": "Use lighting timers and sensors",
+        "lighting-tip-3": "Improve insulation in buildings",
+        "lighting-tip-4": "Install energy-efficient heating and cooling systems",
+        "lighting-tip-5": "Consider passive solar design for new structures",
+        "section-renewable-title": "Renewable Energy Options",
+        "section-renewable-desc": "Farms have unique opportunities to generate renewable energy:",
+        "renewable-tip-1": "Solar panels on buildings or unused land",
+        "renewable-tip-2": "Wind turbines in suitable locations",
+        "renewable-tip-3": "Biogas from anaerobic digesters",
+        "renewable-tip-4": "Micro-hydro systems where water flow is available",
+        "section-audits-title": "Energy Audits",
+        "section-audits-desc": "Consider conducting an energy audit to identify specific opportunities for your farm:",
+        "audit-tip-1": "Many utilities and extension services offer agricultural energy audits",
+        "audit-tip-2": "Identify largest energy uses and prioritize improvements",
+        "audit-tip-3": "Calculate return on investment for potential upgrades",
+        "audit-tip-4": "Apply for funding or incentives to implement changes",
+        "section-tillage-title": "Reduced Tillage Practices",
+        "section-tillage-desc": "Adopting conservation tillage practices can significantly reduce fuel consumption:",
+        "tillage-tip-1": "No-till or reduced-till systems require fewer tractor passes",
+        "tillage-tip-2": "Less fuel used for field preparation and cultivation",
+        "tillage-tip-3": "Additional benefits include improved soil health and carbon sequestration",
+        "section-benefits-title": "Benefits of Energy Conservation",
+        "benefit-1": "Lower operating costs",
+        "benefit-2": "Reduced greenhouse gas emissions",
+        "benefit-3": "Decreased dependence on fossil fuels",
+        "benefit-4": "Potential new income streams from renewable energy",
+        "benefit-5": "Improved resilience during power outages or fuel shortages"
+      },
+      hi: {
+        "page-title": "सरल सुझावों से ऊर्जा संरक्षण",
+  "nav-home": "होम",
+  "nav-about": "हमारे बारे में",
+  "nav-services": "सेवाएँ",
+  "nav-contact": "संपर्क करें",
+  "back-button": "विषयों पर लौटें",
+  "main-title": "सरल सुझावों से ऊर्जा संरक्षण",
+  "main-subtitle": "अपने खेत पर ऊर्जा की खपत और लागत को कम करने के व्यावहारिक तरीके जानें।",
+  "section-energy-use-title": "कृषि में ऊर्जा उपयोग",
+  "section-energy-use-desc": "कृषि एक ऊर्जा-सघन उद्योग है, जो सीधे खेत संचालन, सिंचाई और पशुधन सुविधाओं के लिए ऊर्जा का उपयोग करता है, साथ ही अप्रत्यक्ष रूप से उर्वरक और कीटनाशकों के माध्यम से भी। ऊर्जा संरक्षण उपायों को लागू करने से लागतों और पर्यावरणीय प्रभाव में काफी कमी लाई जा सकती है।",
+  "section-equip-title": "उपकरण दक्षता",
+  "section-equip-desc": "खेत में उपयोग किए जाने वाले उपकरणों का एक महत्वपूर्ण हिस्सा ऊर्जा उपयोग में आता है। दक्षता बढ़ाने के लिए कुछ सुझाव:",
+  "equip-tip-1": "इंजन और उपकरणों का नियमित रखरखाव करें",
+  "equip-tip-2": "कार्य के लिए उपयुक्त आकार के उपकरण का उपयोग करें",
+  "equip-tip-3": "उपकरण बदलते समय ईंधन-कुशल या इलेक्ट्रिक विकल्प पर विचार करें",
+  "equip-tip-4": "ओवरलैपिंग पास को कम करने के लिए प्रिसिजन एग्रीकल्चर तकनीकों का उपयोग करें",
+  "equip-tip-5": "ईंधन उपयोग कम करने के लिए ऑटो-गाइडेंस सिस्टम का इस्तेमाल करें",
+  "section-irrigation-title": "सिंचाई दक्षता",
+  "section-irrigation-desc": "खेतों में सिंचाई सबसे बड़े ऊर्जा खर्चों में से एक हो सकती है। इन रणनीतियों के साथ दक्षता बढ़ाएं:",
+  "irrigation-tip-1": "फसल की जरूरत और मिट्टी की नमी के स्तर के आधार पर सिंचाई निर्धारित करें",
+  "irrigation-tip-2": "पम्प और मोटरों का इष्टतम प्रदर्शन सुनिश्चित करें",
+  "irrigation-tip-3": "जहाँ संभव हो, कम दबाव वाली प्रणालियों का उपयोग करें",
+  "irrigation-tip-4": "रो क्रॉप के लिए ड्रिप सिंचाई पर विचार करें",
+  "irrigation-tip-5": "पम्पों पर वैरिएबल फ्रीक्वेंसी ड्राइव्स लगाएं",
+  "section-lighting-title": "लाइटिंग और हीटिंग",
+  "section-lighting-desc": "पशु भवनों और ग्रीनहाउसों में, लाइटिंग और जलवायु नियंत्रण प्रणालियों द्वारा काफी ऊर्जा का उपयोग होता है:",
+  "lighting-tip-1": "एलईडी लाइटिंग पर स्विच करें",
+  "lighting-tip-2": "लाइटिंग टाइमर्स और सेंसर का उपयोग करें",
+  "lighting-tip-3": "भवनों में इंसुलेशन में सुधार करें",
+  "lighting-tip-4": "ऊर्जा-कुशल हीटिंग और कूलिंग सिस्टम स्थापित करें",
+  "lighting-tip-5": "नई संरचनाओं के लिए पैसिव सोलर डिज़ाइन पर विचार करें",
+  "section-renewable-title": "नवीकरणीय ऊर्जा विकल्प",
+  "section-renewable-desc": "खेतों में नवीकरणीय ऊर्जा उत्पन्न करने के अद्वितीय अवसर हैं:",
+  "renewable-tip-1": "भवनों या खाली जमीन पर सोलर पैनल",
+  "renewable-tip-2": "उपयुक्त स्थानों पर विंड टरबाइन",
+  "renewable-tip-3": "अनएरोबिक डाइजेस्टर्स से बायोगैस",
+  "renewable-tip-4": "जहाँ पानी का प्रवाह उपलब्ध हो, माइक्रो-हाइड्रो सिस्टम",
+  "section-audits-title": "ऊर्जा ऑडिट्स",
+  "section-audits-desc": "अपने खेत के लिए विशिष्ट अवसरों की पहचान करने हेतु ऊर्जा ऑडिट कराने पर विचार करें:",
+  "audit-tip-1": "कई यूटिलिटी और एक्सटेंशन सेवाएं कृषि ऊर्जा ऑडिट प्रदान करती हैं",
+  "audit-tip-2": "सबसे बड़े ऊर्जा उपयोग की पहचान करें और सुधारों को प्राथमिकता दें",
+  "audit-tip-3": "संभावित उन्नयन के लिए निवेश पर वापसी की गणना करें",
+  "audit-tip-4": "परिवर्तन लागू करने हेतु फंडिंग या प्रोत्साहन के लिए आवेदन करें",
+  "section-tillage-title": "घटित खेत जोत प्रथाएँ",
+  "section-tillage-desc": "कृषि में इंधन की खपत को काफी कम करने के लिए संरक्षण जोत प्रथाओं को अपनाएं:",
+  "tillage-tip-1": "नो-टिल्ट या घटित-टिल्ट प्रणालियाँ कम ट्रैक्टर पास की मांग करती हैं",
+  "tillage-tip-2": "खेत की तैयारी और खेती के लिए कम ईंधन की आवश्यकता होती है",
+  "tillage-tip-3": "अतिरिक्त लाभों में मिट्टी के स्वास्थ्य में सुधार और कार्बन सीक्वेस्ट्रेशन शामिल हैं",
+  "section-benefits-title": "ऊर्जा संरक्षण के लाभ",
+  "benefit-1": "निचले परिचालन खर्च",
+  "benefit-2": "ग्रीनहाउस गैस उत्सर्जन में कमी",
+  "benefit-3": "जीवाश्म ईंधन पर निर्भरता में कमी",
+  "benefit-4": "नवीकरणीय ऊर्जा से संभावित नए आय स्रोत",
+  "benefit-5": "पावर आउटेज या ईंधन की कमी के दौरान बेहतर लचीलापन"
+      },
+      mr: {
+        "page-title": "सोप्या टिप्सने ऊर्जा संवर्धन",
+  "nav-home": "मुख्यपृष्ठ",
+  "nav-about": "आमच्याबद्दल",
+  "nav-services": "सेवा",
+  "nav-contact": "संपर्क",
+  "back-button": "विषयांकडे परत जा",
+  "main-title": "सोप्या टिप्सने ऊर्जा संवर्धन",
+  "main-subtitle": "तुमच्या शेतातील ऊर्जा वापर आणि खर्च कमी करण्याचे व्यावहारिक मार्ग शोधा.",
+  "section-energy-use-title": "कृषीमध्ये ऊर्जा वापर",
+  "section-energy-use-desc": "कृषी हा ऊर्जा-घन उद्योग आहे, जो थेट क्षेत्र संचालन, सिंचन आणि पशुधन सुविधांसाठी तसेच अप्रत्यक्ष पद्धतीने उर्वरक आणि कीटकनाशकांद्वारे ऊर्जा वापरतो. ऊर्जा संवर्धन उपाय अंमलात आणल्याने खर्च आणि पर्यावरणीय परिणामात मोठी बचत होते.",
+  "section-equip-title": "उपकरण कार्यक्षमता",
+  "section-equip-desc": "शेतातील उपकरणे मोठ्या प्रमाणावर ऊर्जा वापरात येतात. कार्यक्षमता वाढवण्यासाठी काही टिप्स:",
+  "equip-tip-1": "इंजन आणि उपकरणांचे नियमित देखभाल करा",
+  "equip-tip-2": "कामासाठी योग्य आकाराची उपकरणे वापरा",
+  "equip-tip-3": "उपकरण बदलतानाचा ईंधन-कुशल किंवा इलेक्ट्रिक पर्यायांचा विचार करा",
+  "equip-tip-4": "ओव्हरलॅपिंग पास कमी करण्यासाठी अचूक शेती तंत्रज्ञानाचा वापर करा",
+  "equip-tip-5": "ईंधन वापर कमी करण्यासाठी ऑटो-गाइडेंस प्रणाली वापरा",
+  "section-irrigation-title": "सिंचन कार्यक्षमता",
+  "section-irrigation-desc": "शेतांत सिंचन हा सर्वात मोठा ऊर्जा खर्च असू शकतो. खालील उपायांनी कार्यक्षमता वाढवा:",
+  "irrigation-tip-1": "फसल्यांच्या गरजेनुसार आणि मातीतल्या ओलाव्यानुसार सिंचन निश्चित करा",
+  "irrigation-tip-2": "पंप व मोटर्सची योग्य देखभाल करा",
+  "irrigation-tip-3": "शक्य असल्यास कमी दबावाच्या प्रणाली वापरा",
+  "irrigation-tip-4": "रो क्रॉपसाठी ड्रिप सिंचनाचा विचार करा",
+  "irrigation-tip-5": "पंपवर वेगवेगळ्या फ्रीक्वेंसी ड्राइव्स स्थापित करा",
+  "section-lighting-title": "लाइटिंग आणि हीटिंग",
+  "section-lighting-desc": "पशुधन घर आणि ग्रीनहाउस मधील लाइटिंग आणि हवामान नियंत्रक प्रणालींमध्ये जास्त ऊर्जा खर्च होतो:",
+  "lighting-tip-1": "एलईडी लाइटिंगवर बदला",
+  "lighting-tip-2": "लाइटिंग टाइमर्स आणि सेन्सर्स वापरा",
+  "lighting-tip-3": "भवनांमध्ये इंसुलेशन सुधारा",
+  "lighting-tip-4": "ऊर्जा-कुशल हीटिंग आणि कूलिंग सिस्टम लावा",
+  "lighting-tip-5": "नवीन संरचनांसाठी निष्क्रिय सौर तंत्रज्ञानाचा विचार करा",
+  "section-renewable-title": "नवीनीकरणीय ऊर्जा पर्याय",
+  "section-renewable-desc": "शेतांना नवीनीकरणीय ऊर्जा निर्माण करण्याच्या अनोख्या संधी उपलब्ध आहेत:",
+  "renewable-tip-1": "भवनांवर किंवा वापर नसलेल्या जमिनीवर सोलर पॅनेल",
+  "renewable-tip-2": "योग्य ठिकाणी विंड टरबाइन",
+  "renewable-tip-3": "अनएरोबिक डाइजेस्टरमधून बायोगॅस",
+  "renewable-tip-4": "जिथे पाण्याचा प्रवाह असेल तिथे मायक्रो-हायड्रो प्रणाली",
+  "section-audits-title": "ऊर्जा ऑडिट्स",
+  "section-audits-desc": "तुमच्या शेतासाठी विशिष्ट संधी ओळखण्यासाठी ऊर्जा ऑडिट करा:",
+  "audit-tip-1": "अनेक यूटिलिटी आणि विस्तार सेवांकडून कृषि ऊर्जा ऑडिट मिळतात",
+  "audit-tip-2": "सर्वात जास्त ऊर्जा वापर ओळखा आणि सुधारणा प्राधान्य ठेवा",
+  "audit-tip-3": "संभाव्य सुधारणा यांवर गुंतवणुकीवर परतावा मोजा",
+  "audit-tip-4": "बदल अंमलात आणण्यासाठी निधी किंवा प्रोत्साहनासाठी अर्ज करा",
+  "section-tillage-title": "कमी भूमि जोत पद्धती",
+  "section-tillage-desc": "उर्जा खर्च कमी करण्यासाठी संरक्षण जोत पद्धतींचा अवलंब करा:",
+  "tillage-tip-1": "नो-टिल्ट किंवा कमी-टिल्ट प्रणालींमुळे ट्रॅक्टर पास कमी होतात",
+  "tillage-tip-2": "मातीच्या तयारीसाठी कमी ईंधनाची गरज असते",
+  "tillage-tip-3": "मातीच्या आरोग्य सुधारणा आणि कार्बन साठवण यासारखे इतर फायदे मिळतात",
+  "section-benefits-title": "ऊर्जा संवर्धनाचे फायदे",
+  "benefit-1": "कमी ऑपरेटिंग खर्च",
+  "benefit-2": "ग्रीनहाउस गॅस उत्सर्जनात घट",
+  "benefit-3": "जीवाश्म इंधनावर अवलंबित्व कमी",
+  "benefit-4": "नवीनीकरणीय ऊर्जेतून नवीन उत्पन्नाचे स्रोत",
+  "benefit-5": "वीजपुरवठा किंवा ईंधनाच्या कमतरतेच्या वेळी सुधारित लवचिकता"
+      }
+    };
+
+    function changeLanguage() {
+      const lang = document.getElementById("languageSelector").value;
+      const elements = document.querySelectorAll("[data-translate]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.innerText = translations[lang][key] || translations["en"][key];
+      });
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

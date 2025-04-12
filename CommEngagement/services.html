@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Ecosphere</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Agrio Logo" />
+        <span>Ecosphere</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" data-translate="nav-home">Home</a>
+        <a href="about.html" data-translate="nav-about">About</a>
+        <a href="services.html" class="active" data-translate="nav-services">Services</a>
+        <a href="contact.html" data-translate="nav-contact">Contact</a>
+        <div class="language-wrapper">
+          <i class="fas fa-globe"></i>
+          <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="mr">मराठी</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 data-translate="services-title">Our Services</h1>
+      <p data-translate="services-desc">
+        At Agrio, we offer a range of services designed to help farmers transition to more sustainable 
+        practices while maintaining productivity and profitability.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-leaf"></i></div>
+        <h3 data-translate="service1-title">Agricultural Consulting</h3>
+        <p data-translate="service1-desc">Expert advice on sustainable farming practices tailored to your specific needs and environment.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-book"></i></div>
+        <h3 data-translate="service2-title">Educational Resources</h3>
+        <p data-translate="service2-desc">Access to our comprehensive library of guides, videos, and research on sustainable agriculture.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-tractor"></i></div>
+        <h3 data-translate="service3-title">Livestock Management</h3>
+        <p data-translate="service3-desc">Specialized guidance on sustainable animal husbandry and poultry farming techniques.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-cloud-rain"></i></div>
+        <h3 data-translate="service4-title">Water Conservation</h3>
+        <p data-translate="service4-desc">Implementation assistance for rainwater harvesting and irrigation efficiency systems.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-recycle"></i></div>
+        <h3 data-translate="service5-title">Waste Management Solutions</h3>
+        <p data-translate="service5-desc">Comprehensive strategies for reducing, reusing, and recycling agricultural waste.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-bolt"></i></div>
+        <h3 data-translate="service6-title">Energy Audits</h3>
+        <p data-translate="service6-desc">Professional assessment of your farm's energy usage with recommendations for conservation.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-video"></i></div>
+        <h3 data-translate="service7-title">Video Production</h3>
+        <p data-translate="service7-desc">Custom instructional videos showcasing sustainable techniques specific to your operation.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-tree"></i></div>
+        <h3 data-translate="service8-title">Agroforestry Planning</h3>
+        <p data-translate="service8-desc">Design services for integrating trees and shrubs into your agricultural landscape.</p>
+      </div>
+    </div>
+
+    <div class="work-process">
+      <h2 data-translate="work-title">How We Work</h2>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3 data-translate="step1-title">Consultation</h3>
+          <p data-translate="step1-desc">We begin with a thorough assessment of your current practices, goals, and challenges.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3 data-translate="step2-title">Customized Plan</h3>
+          <p data-translate="step2-desc">Our experts develop a tailored sustainability plan that aligns with your specific needs.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3 data-translate="step3-title">Implementation & Support</h3>
+          <p data-translate="step3-desc">We provide ongoing assistance and resources as you implement sustainable practices.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2023 Agrio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="contact.html" data-translate="nav-contact">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Language Script -->
+  <script>
+    const translations = {
+      en: {
+        "nav-home": "Home",
+        "nav-about": "About",
+        "nav-services": "Services",
+        "nav-contact": "Contact",
+        "services-title": "Our Services",
+        "services-desc": "At Agrio, we offer a range of services designed to help farmers transition to more sustainable practices while maintaining productivity and profitability.",
+        "service1-title": "Agricultural Consulting",
+        "service1-desc": "Expert advice on sustainable farming practices tailored to your specific needs and environment.",
+        "service2-title": "Educational Resources",
+        "service2-desc": "Access to our comprehensive library of guides, videos, and research on sustainable agriculture.",
+        "service3-title": "Livestock Management",
+        "service3-desc": "Specialized guidance on sustainable animal husbandry and poultry farming techniques.",
+        "service4-title": "Water Conservation",
+        "service4-desc": "Implementation assistance for rainwater harvesting and irrigation efficiency systems.",
+        "service5-title": "Waste Management Solutions",
+        "service5-desc": "Comprehensive strategies for reducing, reusing, and recycling agricultural waste.",
+        "service6-title": "Energy Audits",
+        "service6-desc": "Professional assessment of your farm's energy usage with recommendations for conservation.",
+        "service7-title": "Video Production",
+        "service7-desc": "Custom instructional videos showcasing sustainable techniques specific to your operation.",
+        "service8-title": "Agroforestry Planning",
+        "service8-desc": "Design services for integrating trees and shrubs into your agricultural landscape.",
+        "work-title": "How We Work",
+        "step1-title": "Consultation",
+        "step1-desc": "We begin with a thorough assessment of your current practices, goals, and challenges.",
+        "step2-title": "Customized Plan",
+        "step2-desc": "Our experts develop a tailored sustainability plan that aligns with your specific needs.",
+        "step3-title": "Implementation & Support",
+        "step3-desc": "We provide ongoing assistance and resources as you implement sustainable practices."
+      },
+      hi: {
+        "nav-home": "मुखपृष्ठ",
+        "nav-about": "हमारे बारे में",
+        "nav-services": "सेवाएं",
+        "nav-contact": "संपर्क करें",
+        "services-title": "हमारी सेवाएं",
+        "services-desc": "Agrio में, हम किसानों को अधिक टिकाऊ प्रथाओं की ओर संक्रमण में मदद करने के लिए कई सेवाएं प्रदान करते हैं।",
+        "service1-title": "कृषि परामर्श",
+        "service1-desc": "आपकी ज़रूरतों और पर्यावरण के अनुसार टिकाऊ खेती पर विशेषज्ञ सलाह।",
+        "service2-title": "शैक्षिक संसाधन",
+        "service2-desc": "टिकाऊ कृषि पर हमारे व्यापक गाइड, वीडियो और शोध तक पहुँच।",
+        "service3-title": "पशु प्रबंधन",
+        "service3-desc": "पशुपालन और मुर्गी पालन की टिकाऊ तकनीकों पर विशेष मार्गदर्शन।",
+        "service4-title": "जल संरक्षण",
+        "service4-desc": "वर्षा जल संचयन और सिंचाई दक्षता प्रणाली में सहायता।",
+        "service5-title": "कचरा प्रबंधन समाधान",
+        "service5-desc": "कृषि अपशिष्ट को कम करने, पुन: उपयोग और पुनर्चक्रण के लिए रणनीतियाँ।",
+        "service6-title": "ऊर्जा ऑडिट",
+        "service6-desc": "ऊर्जा खपत का मूल्यांकन और संरक्षण के लिए सुझाव।",
+        "service7-title": "वीडियो निर्माण",
+        "service7-desc": "आपके संचालन के लिए विशेष टिकाऊ तकनीकों के वीडियो।",
+        "service8-title": "एग्रोफोरेस्ट्री योजना",
+        "service8-desc": "कृषि में पेड़ों को शामिल करने की डिज़ाइन सेवाएं।",
+        "work-title": "हम कैसे काम करते हैं",
+        "step1-title": "परामर्श",
+        "step1-desc": "हम आपकी प्रथाओं, लक्ष्यों और चुनौतियों का आकलन करते हैं।",
+        "step2-title": "अनुकूलित योजना",
+        "step2-desc": "हमारी टीम आपकी आवश्यकताओं के अनुसार योजना बनाती है।",
+        "step3-title": "कार्यान्वयन और समर्थन",
+        "step3-desc": "हम आपके कार्यान्वयन में सहायता और संसाधन प्रदान करते हैं।"
+      },
+      mr: {
+        "nav-home": "मुखपृष्ठ",
+        "nav-about": "आमच्याबद्दल",
+        "nav-services": "सेवा",
+        "nav-contact": "संपर्क करा",
+        "services-title": "आमच्या सेवा",
+        "services-desc": "Agrio मध्ये, आम्ही शाश्वत शेतीसाठी शेतकऱ्यांना मदत करणाऱ्या सेवा पुरवतो.",
+        "service1-title": "कृषी सल्लामसलत",
+        "service1-desc": "आपल्या गरजेनुसार शाश्वत शेतीसाठी सल्ला.",
+        "service2-title": "शैक्षणिक संसाधने",
+        "service2-desc": "शाश्वत शेतीवरील मार्गदर्शक, व्हिडिओ आणि संशोधन.",
+        "service3-title": "पशुपालन व्यवस्थापन",
+        "service3-desc": "पशुपालन व कुक्कुटपालनासाठी मार्गदर्शन.",
+        "service4-title": "पाणी संवर्धन",
+        "service4-desc": "पावसाच्या पाण्याचे संचयन आणि सिंचन सुधारणा.",
+        "service5-title": "कचरा व्यवस्थापन उपाय",
+        "service5-desc": "कृषी कचरा कमी व पुनर्वापराचे उपाय.",
+        "service6-title": "ऊर्जा लेखापरीक्षण",
+        "service6-desc": "ऊर्जा वापराचे मूल्यांकन व बचत उपाय.",
+        "service7-title": "व्हिडिओ निर्मिती",
+        "service7-desc": "तुमच्या शेतासाठी शाश्वत पद्धतींचे व्हिडिओ.",
+        "service8-title": "ऍग्रोफॉरेस्ट्री योजना",
+        "service8-desc": "शेतीमध्ये झाडांचा समावेश करण्यासाठी डिझाइन सेवा.",
+        "work-title": "आम्ही कसे काम करतो",
+        "step1-title": "सल्ला",
+        "step1-desc": "तुमच्या पद्धती, उद्दिष्ट आणि अडचणींचे मूल्यमापन.",
+        "step2-title": "सानुकूल योजना",
+        "step2-desc": "तुमच्या गरजांनुसार खास योजना बनवली जाते.",
+        "step3-title": "अंमलबजावणी व सहाय्य",
+        "step3-desc": "अंमलबजावणीत आमची टीम मदत करते."
+      }
+    };
+
+    function changeLanguage() {
+      const lang = document.getElementById("languageSelector").value;
+      const elements = document.querySelectorAll("[data-translate]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.innerText = translations[lang][key] || el.innerText;
+      });
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

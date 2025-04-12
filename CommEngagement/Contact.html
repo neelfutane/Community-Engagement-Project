@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-translate="contact-title-page">Contact - Ecosphere</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Agrio Logo" />
+          <span>Ecosphere</span>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" data-translate="nav-home">Home</a>
+          <a href="about.html" data-translate="nav-about">About</a>
+          <a href="services.html" data-translate="nav-services">Services</a>
+          <a href="contact.html" class="active" data-translate="nav-contact">Contact</a>
+          <div class="language-wrapper">
+            <i class="fas fa-globe"></i>
+            <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी</option>
+              <option value="mr">मराठी</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="page-header">
+        <h1 data-translate="contact-heading">Contact Us</h1>
+      </div>
+
+      <div class="contact-grid">
+        <div class="content-box">
+          <h2 data-translate="get-in-touch">Get In Touch</h2>
+          <p data-translate="get-in-touch-text">
+            Have questions about sustainable agriculture or need assistance with implementing 
+            new practices? We're here to help! Fill out the form and our team will get back to you.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <h3 data-translate="email">Email</h3>
+              <p>jainpo@rknec.edu</p>
+            </div>
+
+            <div class="info-item">
+              <h3 data-translate="phone">Phone</h3>
+              <p>7887499069</p>
+            </div>
+
+            <div class="info-item">
+              <h3 data-translate="address">Address</h3>
+              <p>
+                Shivmadka, Gumgaon<br />
+                Nagpur
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <h2 data-translate="send-message">Send us a Message</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" data-translate="form-name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-translate="form-email">Email</label>
+              <input type="email" id="email" placeholder="Your email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" data-translate="form-subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject of your message" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" data-translate="form-message">Message</label>
+              <textarea id="message" placeholder="Your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-full" data-translate="form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2023 Agrio. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="contact.html" data-translate="nav-contact">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Language Script -->
+    <script>
+      const translations = {
+        en: {
+          "nav-home": "Home",
+          "nav-about": "About",
+          "nav-services": "Services",
+          "nav-contact": "Contact",
+          "contact-title-page": "Contact - Agrio",
+          "contact-heading": "Contact Us",
+          "get-in-touch": "Get In Touch",
+          "get-in-touch-text": "Have questions about sustainable agriculture or need assistance with implementing new practices? We're here to help! Fill out the form and our team will get back to you.",
+          "email":"Email",
+          "phone": "Phone",
+          "address": "Address",
+          "send-message": "Send us a Message",
+          "form-name": "Name",
+          "form-email": "Email",
+          "form-subject": "Subject",
+          "form-message": "Message",
+          "form-submit": "Send Message"
+        },
+        hi: {
+          "nav-home": "होम",
+          "nav-about": "हमारे बारे में",
+          "nav-services": "सेवाएं",
+          "nav-contact": "संपर्क करें",
+          "contact-title-page": "संपर्क करें - एग्रीओ",
+          "contact-heading": "संपर्क करें",
+          "get-in-touch": "संपर्क में रहें",
+          "get-in-touch-text": "क्या आपके पास सतत कृषि के बारे में प्रश्न हैं या नई पद्धतियाँ लागू करने में सहायता चाहिए? हम मदद के लिए यहाँ हैं! फ़ॉर्म भरें और हमारी टीम आपसे संपर्क करेगी।",
+          "email":"ईमेल",
+          "phone": "फ़ोन",
+          "address": "पता",
+          "send-message": "हमें संदेश भेजें",
+          "form-name": "नाम",
+          "form-email": "ईमेल",
+          "form-subject": "विषय",
+          "form-message": "संदेश",
+          "form-submit": "संदेश भेजें"
+        },
+        mr: {
+          "nav-home": "मुख्यपृष्ठ",
+          "nav-about": "आमच्याबद्दल",
+          "nav-services": "सेवा",
+          "nav-contact": "संपर्क",
+          "contact-title-page": "संपर्क - ऍग्रीओ",
+          "contact-heading": "संपर्क करा",
+          "get-in-touch": "संपर्क साधा",
+          "get-in-touch-text": "शाश्वत शेतीबद्दल प्रश्न आहेत किंवा नवीन पद्धती लागू करण्यात मदतीची गरज आहे? आम्ही मदतीसाठी येथे आहोत! फॉर्म भरा आणि आमचा संघ आपल्याशी संपर्क साधेल.",
+          "email":"ईमेल",
+          "phone": "फोन",
+          "address": "पत्ता",
+          "send-message": "आमच्याशी संपर्क साधा",
+          "form-name": "नाव",
+          "form-email": "ईमेल",
+          "form-subject": "विषय",
+          "form-message": "संदेश",
+          "form-submit": "संदेश पाठवा"
+        }
+      };
+
+      function changeLanguage() {
+        const lang = document.getElementById("languageSelector").value;
+        const elements = document.querySelectorAll("[data-translate]");
+        elements.forEach((el) => {
+          const key = el.getAttribute("data-translate");
+          el.innerText = translations[lang][key] || el.innerText;
+        });
+      }
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

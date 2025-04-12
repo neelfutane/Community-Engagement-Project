@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="title">Animal Husbandry and Poultry Farming</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .topic-content {
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    .topic-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .topic-icon {
+      font-size: 2rem;
+      color: #8b5cf6;
+      margin-right: 1rem;
+      background-color: #f3e8ff;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+
+    .media-container {
+      margin: 2rem 0;
+    }
+
+    .topic-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      margin-bottom: 1.5rem;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    h2, h3 {
+      color: #8b5cf6;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .back-button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Agrio Logo" />
+      <span>Ecosphere</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active" data-translate="nav-home">Home</a>
+      <a href="about.html" data-translate="nav-about">About</a>
+      <a href="services.html" data-translate="nav-services">Services</a>
+      <a href="contact.html" data-translate="nav-contact">Contact</a>
+      <div class="language-wrapper">
+        <i class="fas fa-globe"></i>
+        <select id="languageSelector" class="language-selector" onchange="changeLanguage()">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="mr">मराठी</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container">
+  <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> <span data-translate="back">Back to Topics</span></a>
+
+  <div class="topic-header">
+    <div class="topic-icon">
+      <i class="fas fa-tractor"></i>
+    </div>
+    <div>
+      <h1 data-translate="heading">Animal Husbandry and Poultry Farming</h1>
+      <p class="subtitle" data-translate="subtitle">Explore sustainable practices for raising livestock and poultry on your farm.</p>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/PmLnH-1bi-A?si=bzliEbv3Ce3tVUXw" title="Animal Husbandry Techniques" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="topic-content">
+    <h2 data-translate="sustainable-heading">Sustainable Animal Husbandry</h2>
+    <p data-translate="sustainable-desc">Sustainable animal husbandry focuses on raising animals in ways that are environmentally sound, socially responsible, and economically viable. It emphasizes animal welfare, resource conservation, and integration with the broader farm ecosystem.</p>
+
+    <h3 data-translate="pasture-heading">Pasture-Based Systems</h3>
+    <p data-translate="pasture-desc">Pasture-based livestock systems offer numerous benefits:</p>
+    <ul>
+      <li data-translate="pasture-1">Improved animal health and natural behaviors</li>
+      <li data-translate="pasture-2">Better meat and milk quality</li>
+      <li data-translate="pasture-3">Reduced feed costs</li>
+      <li data-translate="pasture-4">Improved soil fertility through manure distribution</li>
+      <li data-translate="pasture-5">Carbon sequestration in properly managed pastures</li>
+    </ul>
+
+    <h3 data-translate="rotation-heading">Rotational Grazing</h3>
+    <p data-translate="rotation-desc">Rotational grazing involves moving livestock between paddocks to allow pasture recovery:</p>
+    <ul>
+      <li data-translate="rotation-1">Divide pastures into smaller paddocks</li>
+      <li data-translate="rotation-2">Move animals based on forage growth and recovery</li>
+      <li data-translate="rotation-3">Adjust stocking rates to match land carrying capacity</li>
+      <li data-translate="rotation-4">Consider multi-species grazing for better pasture utilization</li>
+    </ul>
+
+    <h3 data-translate="feed-heading">Feed Efficiency</h3>
+    <p data-translate="feed-desc">Improving feed efficiency reduces costs and environmental impact:</p>
+    <ul>
+      <li data-translate="feed-1">Test forage quality to balance rations properly</li>
+      <li data-translate="feed-2">Consider on-farm feed production to reduce transportation</li>
+      <li data-translate="feed-3">Use appropriate feed storage to prevent spoilage</li>
+      <li data-translate="feed-4">Implement precision feeding technologies when appropriate</li>
+    </ul>
+
+    <h3 data-translate="health-heading">Animal Health Management</h3>
+    <p data-translate="health-desc">Preventive health management is key to sustainable animal production:</p>
+    <ul>
+      <li data-translate="health-1">Provide appropriate housing and ventilation</li>
+      <li data-translate="health-2">Develop biosecurity protocols</li>
+      <li data-translate="health-3">Work with veterinarians on preventive health plans</li>
+      <li data-translate="health-4">Use antibiotics judiciously</li>
+      <li data-translate="health-5">Select animals for disease resistance and adaptability</li>
+    </ul>
+
+    <h3 data-translate="poultry-heading">Sustainable Poultry Production</h3>
+    <p data-translate="poultry-desc">Poultry can be a valuable addition to diverse farms:</p>
+    <ul>
+      <li data-translate="poultry-1">Consider mobile housing systems for pasture access</li>
+      <li data-translate="poultry-2">Use poultry for insect control in orchards or gardens</li>
+      <li data-translate="poultry-3">Select appropriate breeds for your climate and goals</li>
+      <li data-translate="poultry-4">Implement predator protection measures</li>
+      <li data-translate="poultry-5">Manage manure for optimal fertilizer value</li>
+    </ul>
+
+    <h3 data-translate="breeding-heading">Breeding and Genetics</h3>
+    <p data-translate="breeding-desc">Thoughtful breeding decisions support sustainability:</p>
+    <ul>
+      <li data-translate="breeding-1">Select for traits that match your environment</li>
+      <li data-translate="breeding-2">Consider heritage breeds adapted to your region</li>
+      <li data-translate="breeding-3">Maintain genetic diversity in your herd or flock</li>
+      <li data-translate="breeding-4">Use crossbreeding for hybrid vigor when appropriate</li>
+    </ul>
+
+    <h3 data-translate="marketing-heading">Marketing Animal Products</h3>
+    <p data-translate="marketing-desc">Diversified marketing strategies can improve profitability:</p>
+    <ul>
+      <li data-translate="marketing-1">Explore direct marketing to consumers</li>
+      <li data-translate="marketing-2">Consider value-added processing</li>
+      <li data-translate="marketing-3">Investigate certification programs (organic, grass-fed, etc.)</li>
+      <li data-translate="marketing-4">Develop relationships with local restaurants or institutions</li>
+    </ul>
+
+    <h2 data-translate="benefits-heading">Benefits of Sustainable Animal Husbandry</h2>
+    <ul>
+      <li data-translate="benefits-1">Improved animal welfare and health</li>
+      <li data-translate="benefits-2">Better product quality and nutrition</li>
+      <li data-translate="benefits-3">Reduced environmental impact</li>
+      <li data-translate="benefits-4">Improved farm resilience and diversity</li>
+      <li data-translate="benefits-5">Potential premium prices for sustainably raised products</li>
+      <li data-translate="benefits-6">Integration with crop production for a closed-loop system</li>
+    </ul>
+  </div>
+  <div class="media-container">
+    <img src="ah.png" alt="Poultry Farm" class="topic-image">
+  </div>
+</div>
+<script>
+  const translations = {
+  en: {
+    "title": "Animal Husbandry and Poultry Farming",
+    "nav-home": "Home",
+    "nav-about": "About",
+    "nav-services": "Services",
+    "nav-contact": "Contact",
+    "back": "Back to Topics",
+    "heading": "Animal Husbandry and Poultry Farming",
+    "subtitle": "Explore sustainable practices for raising livestock and poultry on your farm.",
+    "sustainable-heading": "Sustainable Animal Husbandry",
+    "sustainable-desc": "Sustainable animal husbandry focuses on raising animals in ways that are environmentally sound, socially responsible, and economically viable. It emphasizes animal welfare, resource conservation, and integration with the broader farm ecosystem.",
+    "pasture-heading": "Pasture-Based Systems",
+    "pasture-desc": "Pasture-based livestock systems offer numerous benefits:",
+    "pasture-1": "Improved animal health and natural behaviors",
+    "pasture-2": "Better meat and milk quality",
+    "pasture-3": "Reduced feed costs",
+    "pasture-4": "Improved soil fertility through manure distribution",
+    "pasture-5": "Carbon sequestration in properly managed pastures",
+    "rotation-heading": "Rotational Grazing",
+    "rotation-desc": "Rotational grazing involves moving livestock between paddocks to allow pasture recovery:",
+    "rotation-1": "Divide pastures into smaller paddocks",
+    "rotation-2": "Move animals based on forage growth and recovery",
+    "rotation-3": "Adjust stocking rates to match land carrying capacity",
+    "rotation-4": "Consider multi-species grazing for better pasture utilization",
+    "feed-heading": "Feed Efficiency",
+    "feed-desc": "Improving feed efficiency reduces costs and environmental impact:",
+    "feed-1": "Test forage quality to balance rations properly",
+    "feed-2": "Consider on-farm feed production to reduce transportation",
+    "feed-3": "Use appropriate feed storage to prevent spoilage",
+    "feed-4": "Implement precision feeding technologies when appropriate",
+    "health-heading": "Animal Health Management",
+    "health-disc": "Preventive health management is key to sustainable animal production:",
+    "health-1": "Provide appropriate housing and ventilation",
+    "health-2": "Develop biosecurity protocols",
+    "health-3": "Work with veterinarians on preventive health plans",
+    "health-4": "Use antibiotics judiciously",
+    "health-5": "Select animals for disease resistance and adaptability",
+    "poultry-heading": "Sustainable Poultry Production",
+    "poultry-desc": "Poultry can be a valuable addition to diverse farms:",
+    "poultry-1": "Consider mobile housing systems for pasture access",
+    "poultry-2": "Use poultry for insect control in orchards or gardens",
+    "poultry-3": "Select appropriate breeds for your climate and goals",
+    "poultry-4": "Implement predator protection measures",
+    "poultry-5": "Manage manure for optimal fertilizer value",
+    "breeding-heading": "Breeding and Genetics",
+    "breeding-desc": "Thoughtful breeding decisions support sustainability:",
+    "breeding-1": "Select for traits that match your environment",
+    "breeding-2": "Consider heritage breeds adapted to your region",
+    "breeding-3": "Maintain genetic diversity in your herd or flock",
+    "breeding-4": "Use crossbreeding for hybrid vigor when appropriate",
+    "marketing-heading": "Marketing Animal Products",
+    "marketing-desc": "Diversified marketing strategies can improve profitability:",
+    "marketing-1": "Explore direct marketing to consumers",
+    "marketing-2": "Consider value-added processing",
+    "marketing-3": "Investigate certification programs (organic, grass-fed, etc.)",
+    "marketing-4": "Develop relationships with local restaurants or institutions",
+    "benefits-heading": "Benefits of Sustainable Animal Husbandry",
+    "benefits-1": "Improved animal welfare and health",
+    "benefits-2": "Better product quality and nutrition",
+    "benefits-3": "Reduced environmental impact",
+    "benefits-4": "Improved farm resilience and diversity",
+    "benefits-5": "Potential premium prices for sustainably raised products",
+    "benefits-6": "Integration with crop production for a closed-loop system"
+  },
+  hi :{
+    "title": "पशुपालन और कुक्कुट पालन",
+    "nav-home": "मुखपृष्ठ",
+    "nav-about": "हमारे बारे में",
+    "nav-services": "सेवाएँ",
+    "nav-contact": "संपर्क करें",
+    "back": "विषयों पर वापस जाएँ",
+    "heading": "पशुपालन और कुक्कुट पालन",
+    "subtitle": "अपने खेत पर पशुओं और मुर्गियों को पालने के लिए टिकाऊ तरीकों का अन्वेषण करें।",
+    "sustainable-heading": "टिकाऊ पशुपालन",
+    "sustainable-desc": "टिकाऊ पशुपालन ऐसे तरीकों पर केंद्रित होता है जो पर्यावरणीय रूप से सुरक्षित, सामाजिक रूप से जिम्मेदार और आर्थिक रूप से व्यवहार्य हों। यह पशु कल्याण, संसाधन संरक्षण और समग्र कृषि तंत्र के साथ एकीकरण पर जोर देता है।",
+    "pasture-heading": "चराई आधारित प्रणाली",
+    "pasture-desc": "चराई आधारित पशुपालन प्रणाली के अनेक लाभ हैं:",
+    "pasture-1": "पशुओं के स्वास्थ्य और प्राकृतिक व्यवहार में सुधार",
+    "pasture-2": "बेहतर मांस और दूध की गुणवत्ता",
+    "pasture-3": "चारे की लागत में कमी",
+    "pasture-4": "गोबर के वितरण से मिट्टी की उर्वरता में सुधार",
+    "pasture-5": "सही ढंग से प्रबंधित चारागाहों में कार्बन का संचयन",
+    "rotation-heading": "घूर्णन चराई",
+    "rotation-desc": "घूर्णन चराई में पशुओं को paddock में स्थानांतरित किया जाता है ताकि चारागाह को पुनः उगने का समय मिल सके:",
+    "rotation-1": "चारागाह को छोटे paddock में विभाजित करें",
+    "rotation-2": "चारे की वृद्धि और पुनर्प्राप्ति के आधार पर पशुओं को स्थानांतरित करें",
+    "rotation-3": "भूमि की वहन क्षमता के अनुसार पशु संख्या समायोजित करें",
+    "rotation-4": "बेहतर चारागाह उपयोग के लिए बहु-प्रजातीय चराई पर विचार करें",
+    "feed-heading": "चारा दक्षता",
+    "feed-desc": "चारा दक्षता में सुधार लागत और पर्यावरणीय प्रभाव को कम करता है:",
+    "feed-1": "राशन को संतुलित करने के लिए चारे की गुणवत्ता का परीक्षण करें",
+    "feed-2": "परिवहन कम करने के लिए खेत पर ही चारा उत्पादन पर विचार करें",
+    "feed-3": "खाद्य बर्बादी को रोकने के लिए उपयुक्त भंडारण का उपयोग करें",
+    "feed-4": "जब संभव हो, सटीक फीडिंग तकनीकों को लागू करें",
+    "health-heading": "पशु स्वास्थ्य प्रबंधन",
+    "health-desc": "सतत पशु उत्पादन के लिए रोकथाम आधारित स्वास्थ्य प्रबंधन आवश्यक है:",
+    "health-1": "उचित आवास और वेंटिलेशन प्रदान करें",
+    "health-2": "बायोसिक्योरिटी प्रोटोकॉल विकसित करें",
+    "health-3": "निवारक स्वास्थ्य योजनाओं के लिए पशु चिकित्सकों से परामर्श करें",
+    "health-4": "एंटीबायोटिक्स का विवेकपूर्ण उपयोग करें",
+    "health-5": "बीमारियों के प्रति प्रतिरोध और अनुकूलता के लिए पशुओं का चयन करें",
+    "poultry-heading": "टिकाऊ कुक्कुट उत्पादन",
+    "poultry-desc": "कुक्कुट पालन विविध कृषि प्रणाली में एक महत्वपूर्ण योगदान कर सकता है:",
+    "poultry-1": "चराई के लिए मोबाइल आवास प्रणाली पर विचार करें",
+    "poultry-2": "बगीचों में कीट नियंत्रण के लिए मुर्गियों का उपयोग करें",
+    "poultry-3": "आपकी जलवायु और लक्ष्य के अनुसार उपयुक्त नस्लों का चयन करें",
+    "poultry-4": "शिकारी सुरक्षा उपायों को लागू करें",
+    "poultry-5": "उत्तम उर्वरक मूल्य के लिए मल प्रबंधन करें",
+    "breeding-heading": "प्रजनन और आनुवंशिकी",
+    "breeding-desc": "विचारशील प्रजनन निर्णय स्थिरता का समर्थन करते हैं:",
+    "breeding-1": "अपने वातावरण से मेल खाने वाले गुणों का चयन करें",
+    "breeding-2": "अपने क्षेत्र में अनुकूलित पारंपरिक नस्लों पर विचार करें",
+    "breeding-3": "अपने झुंड या झुंड में आनुवंशिक विविधता बनाए रखें",
+    "breeding-4": "जहाँ उपयुक्त हो, संकरण (crossbreeding) का उपयोग करें",
+    "marketing-heading": "पशु उत्पादों का विपणन",
+    "marketing-desc": "विविध विपणन रणनीतियाँ लाभप्रदता बढ़ा सकती हैं:",
+    "marketing-1": "उपभोक्ताओं को सीधे बिक्री पर विचार करें",
+    "marketing-2": "मूल्य वर्धित प्रसंस्करण (value-added processing) पर विचार करें",
+    "marketing-3": "प्रमाणन कार्यक्रमों (जैविक, घास खिलाया गया आदि) की जांच करें",
+    "marketing-4": "स्थानीय रेस्तरां या संस्थानों के साथ संबंध बनाएं",
+   "benefits-heading": "टिकाऊ पशुपालन के लाभ",
+    "benefits-1": "पशुओं के कल्याण और स्वास्थ्य में सुधार",
+    "benefits-2": "बेहतर उत्पाद गुणवत्ता और पोषण",
+    "benefits-3": "पर्यावरणीय प्रभाव में कमी",
+    "benefits-4": "खेती की लचीलापन और विविधता में वृद्धि",
+    "benefits-5": "टिकाऊ रूप से पाले गए उत्पादों के लिए उच्च मूल्य की संभावना",
+    "benefits-6": "एक बंद-लूप प्रणाली के लिए फसल उत्पादन के साथ एकीकरण" 
+  },
+  mr : {
+    "title": "पशुपालन आणि कुक्कुटपालन",
+    "nav-home": "मुख्यपृष्ठ",
+    "nav-about": "आमच्याबद्दल",
+    "nav-services": "सेवा",
+    "nav-contact": "संपर्क",
+    "back": "परत विषयांकडे",
+    "heading": "पशुपालन आणि कुक्कुटपालन",
+    "subtitle": "तुमच्या शेतात जनावरे व कुक्कुटपालन करण्यासाठी शाश्वत पद्धती शोधा.",
+    "sustainable-heading": "शाश्वत पशुपालन",
+    "sustainable-desc": "शाश्वत पशुपालन म्हणजे असे जनावरांचे पालनपोषण जे पर्यावरणस्नेही, सामाजिकदृष्ट्या जबाबदार आणि आर्थिकदृष्ट्या फायदेशीर असेल. यामध्ये पशूकल्याण, संसाधनांचे जतन आणि संपूर्ण शेती प्रणालीसोबत समन्वय यावर भर दिला जातो.",
+    "pasture-heading": "चराई आधारित प्रणाली",
+    "pasture-desc": "चराई आधारित पशुपालन प्रणालीचे अनेक फायदे आहेत:",
+    "pasture-1": "जनावरांचे आरोग्य सुधारते आणि नैसर्गिक वर्तनास प्रोत्साहन मिळते",
+    "pasture-2": "मांस आणि दूधाची गुणवत्ता सुधारते",
+    "pasture-3": "चाऱ्याचा खर्च कमी होतो",
+    "pasture-4": "सेंद्रिय खतामुळे मातीची सुपीकता वाढते",
+    "pasture-5": "योग्य प्रकारे व्यवस्थापित चारागृहांमध्ये कार्बन संचयन होते",
+    "rotation-heading": "परिवर्ती चराई",
+    "rotation-desc": "परिवर्ती चराई म्हणजे जनावरांना paddock मधून हलवून पुन्हा चराईसाठी वेळ देणे:",
+    "rotation-1": "चारागृहाचे छोटे paddock मध्ये विभाजन करा",
+    "rotation-2": "चारापिकाची वाढ व पुनरुत्पादन लक्षात घेऊन जनावरांचे स्थलांतर करा",
+    "rotation-3": "जमिनीच्या क्षमतेनुसार जनावरांची संख्या ठरवा",
+    "rotation-4": "उत्तम चारागृह वापरासाठी बहु-प्रजाती चराईचा विचार करा",
+    "feed-heading": "चारा कार्यक्षमता",
+    "feed-desc": "चारा कार्यक्षमता वाढवल्याने खर्च आणि पर्यावरणीय परिणाम दोन्ही कमी होतात:",
+    "feed-1": "संतुलित आहारासाठी चाऱ्याची गुणवत्ता तपासा",
+    "feed-2": "वाहतुकीचा खर्च टाळण्यासाठी शेतातच चारा उत्पादन करा",
+    "feed-3": "चारा साठवण्यासाठी योग्य साठवण प्रणाली वापरा",
+    "feed-4": "योग्य असेल तर अचूक खाद्य तंत्रज्ञान वापरा",
+    "health-heading": "पशु आरोग्य व्यवस्थापन",
+    "health-desc": "शाश्वत पशुपालनासाठी प्रतिबंधात्मक आरोग्य व्यवस्थापन महत्त्वाचे आहे:",
+    "health-1": "योग्य निवास व हवेशीर व्यवस्था द्या",
+    "health-2": "जैव-सुरक्षा नियम तयार करा",
+    "health-3": "प्रतिबंधात्मक आरोग्य योजनांसाठी पशुवैद्यकीय सल्ला घ्या",
+    "health-4": "औषधांचा योग्य वापर करा",
+    "health-5": "आजार प्रतिकारकता आणि अनुकूलतेसाठी जनावरांची निवड करा",
+    "poultry-heading": "शाश्वत कुक्कुटपालन",
+    "poultry-desc": "कुक्कुटपालन ही मिश्र शेतीसाठी उपयुक्त जोड आहे:",
+    "poultry-1": "चराईसाठी फिरती कोंबडी घरे वापरण्याचा विचार करा",
+    "poultry-2": "बागांमध्ये कीड नियंत्रणासाठी कोंबड्यांचा वापर करा",
+    "poultry-3": "हवामान व उद्दिष्टांनुसार योग्य जाती निवडा",
+    "poultry-4": "शिकारी प्राण्यांपासून संरक्षणाची उपाययोजना करा",
+    "poultry-5": "खताच्या मूल्यवर्धनासाठी विष्ठेचे योग्य व्यवस्थापन करा",
+    "breeding-heading": "प्रजनन व जनुकशास्त्र",
+    "breeding-desc": "सुसंस्कृत प्रजनन निर्णय शाश्वततेस हातभार लावतात:",
+    "breeding-1": "तुमच्या वातावरणाशी सुसंगत गुणधर्म असलेल्या जनावरांची निवड करा",
+    "breeding-2": "स्थानिक परिस्थितीनुसार पारंपरिक जाती वापरण्याचा विचार करा",
+    "breeding-3": "झुंडीतील आनुवंशिक विविधता जपा",
+    "breeding-4": "योग्य असल्यास संकरित प्रजनन वापरा",
+    "marketing-heading": "पशुप्रत उत्पादने विक्री",
+    "marketing-desc": "विविध विक्री पद्धतींमुळे नफा वाढवता येतो:",
+    "marketing-1": "थेट ग्राहकांना विक्री करण्याचा विचार करा",
+    "marketing-2": "मूल्यवर्धन प्रक्रियेवर लक्ष द्या",
+    "marketing-3": "प्रमाणन योजना (सेंद्रिय, गवतावर पोसलेले इ.) पाहा",
+    "marketing-4": "स्थानिक हॉटेल्स व संस्था यांच्याशी संबंध प्रस्थापित करा",
+    "benefits-heading": "शाश्वत पशुपालनाचे फायदे",
+    "benefits-1": "जनावरांचे आरोग्य व कल्याण सुधारते",
+    "benefits-2": "उत्पादनाची गुणवत्ता व पोषणमूल्य वाढते",
+    "benefits-3": "पर्यावरणावर होणारा परिणाम कमी होतो",
+    "benefits-4": "शेती अधिक सशक्त व विविध बनते",
+    "benefits-5": "शाश्वत उत्पादनासाठी जास्त किंमत मिळू शकते",
+    "benefits-6": "फसल व पशुपालनाचा समन्वय साधून बंद साखळी तयार करता येते"
+  }
+}
+function changeLanguage() {
+      const lang = document.getElementById("languageSelector").value;
+      const elements = document.querySelectorAll("[data-translate]");
+      elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.innerText = translations[lang][key] || translations["en"][key];
+      });
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>S
